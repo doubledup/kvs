@@ -3,7 +3,7 @@ use std::process::exit;
 use clap::{Parser, Subcommand};
 
 #[derive(Parser)]
-#[clap(version, about)]
+#[clap(version, author, about)]
 struct Cli {
     #[clap(subcommand)]
     command: Option<Commands>,
