@@ -70,3 +70,9 @@ impl KvStore {
         self.store.remove(&key);
     }
 }
+
+impl Default for KvStore {
+    fn default() -> Self {
+        Self::new()
+    }
+}
